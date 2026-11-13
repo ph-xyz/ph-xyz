@@ -19,9 +19,9 @@
 
 ### About
 
-I'm focused on offensive web application security: understanding how real applications handle identity, object ownership, state, and trust boundaries — then testing whether those assumptions hold.
+I spend a lot of time exploring how web applications handle authentication, permissions, and business logic. I like understanding how a feature is supposed to work and finding out what happens when those rules aren't enforced properly.
 
-My work combines **hands-on security research**, small reproducible labs, technical write-ups, and development of tools that make web traffic analysis easier. I'm especially interested in the gap between an application's intended business rules and what its backend actually enforces.
+I also build small labs, write up things I learn while testing, and develop tools to make the process easier.
 
 ### Selected work
 
@@ -41,12 +41,7 @@ My work combines **hands-on security research**, small reproducible labs, techni
 
 ### How I work
 
-`Understand the flow → establish a baseline → vary a trust boundary → verify impact → document evidence`
+I usually start by using a feature normally and understanding what it does. Then I look at the requests, try different accounts or inputs, and compare how the application responds.
 
-I value reproducible testing, explicit uncertainty, and reports that explain **why** a security boundary failed rather than just providing a payload.
+When something looks off, I try to reproduce it and understand why it happened before writing it up.
 
----
-
-<p align="center">
-  <sub>Security research is performed in labs or on systems where testing is explicitly authorized. Public case studies follow the relevant disclosure rules.</sub>
-</p>
