@@ -2,26 +2,51 @@
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/393.gif" width="90" alt="Piplup">
 </p>
 
-# Hey, I'm Pedro
+<h1 align="center">Pedro Henrique · Web Application Security</h1>
 
-I study web security and spend a lot of time figuring out how applications work behind the scenes.
+<p align="center">
+  <b>Web security research · Bug bounty / VDP · Security tooling</b><br>
+  Hands-on testing of authentication, authorization, session management, and application logic.
+</p>
 
-Most of my testing revolves around authorization, sessions and business logic. I'm especially interested in understanding why something works the way it does, and what happens when the backend trusts the wrong thing.
+<p align="center">
+  <a href="https://github.com/ph-xyz/web-security-writeups">Security write-ups</a> ·
+  <a href="https://github.com/ph-xyz/web-security-labs">Practice labs</a> ·
+  <a href="https://github.com/ph-xyz/Caido-Bridge">CaidoBridge</a>
+</p>
 
-I also like building tools and small labs to explore ideas instead of just reading about them.
+---
 
-### Some of my work
+### About
 
-**[CaidoBridge](https://github.com/ph-xyz/Caido-Bridge)**
+I'm focused on offensive web application security: understanding how real applications handle identity, object ownership, state, and trust boundaries — then testing whether those assumptions hold.
 
-A tool I built to connect ChatGPT with Caido, inspect HTTP traffic and replay requests within a defined scope.
+My work combines **hands-on security research**, small reproducible labs, technical write-ups, and development of tools that make web traffic analysis easier. I'm especially interested in the gap between an application's intended business rules and what its backend actually enforces.
 
-**[Web Security Labs](https://github.com/ph-xyz/web-security-labs)**
+### Selected work
 
-Small vulnerable applications I use to practice and understand different web security issues.
+| Project | What it demonstrates |
+| --- | --- |
+| **[CaidoBridge](https://github.com/ph-xyz/Caido-Bridge)** | A Go-based local MCP bridge connecting ChatGPT to Caido for HTTP history and sitemap analysis, scope checks, and optional scope-bound request replay. |
+| **[Web Security Write-ups](https://github.com/ph-xyz/web-security-writeups)** | Technical documentation of practical testing, observed behavior, impact, and remediation; includes a dedicated [Bug Bounty / VDP collection](https://github.com/ph-xyz/web-security-writeups/tree/main/bug-bounty-vdp). |
+| **[Web Security Labs](https://github.com/ph-xyz/web-security-labs)** | Local intentionally vulnerable applications for practicing authorization boundaries, session handling, LDAP injection, mass assignment, and related concepts. |
 
-**[Web Security Writeups](https://github.com/ph-xyz/web-security-writeups)**
+### Areas of focus
 
-Notes and writeups from my testing, including a [section for Bug Bounty and VDP findings](https://github.com/ph-xyz/web-security-writeups/tree/main/bug-bounty-vdp).
+- **Authentication & sessions:** token validation, session lifecycle, logout and password-reset behavior
+- **Authorization:** IDOR / BOLA, horizontal and vertical access controls, object ownership
+- **Business logic:** state transitions, workflow assumptions, and server-side invariants
+- **Web testing:** request analysis, controlled comparisons, injection testing, evidence and reporting
+- **Security engineering:** Go, HTTP tooling, Model Context Protocol (MCP), Caido integrations
 
-Lately I've been spending more time learning about backend design and how security issues emerge from application logic.
+### How I work
+
+`Understand the flow → establish a baseline → vary a trust boundary → verify impact → document evidence`
+
+I value reproducible testing, explicit uncertainty, and reports that explain **why** a security boundary failed rather than just providing a payload.
+
+---
+
+<p align="center">
+  <sub>Security research is performed in labs or on systems where testing is explicitly authorized. Public case studies follow the relevant disclosure rules.</sub>
+</p>
